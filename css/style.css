@@ -1,0 +1,199 @@
+body {
+  font-family: 'Coda', cursive;
+  font-family: 'Hanuman', serif;
+  font-size: 14px;
+  color:#000;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #F4F4F4;
+}
+
+.swiper-slide {
+  text-align: center;
+  /*border-bottom: 2.5px groove #A9B7C0;*/
+  font-size: 18px;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+
+}
+
+.swiper-slide:hover{
+  background: linear-gradient(-110deg, #328CC1 50%, #48c9f8 50%);
+}
+
+.heading{
+  display: block;
+  text-decoration: none;
+  margin-bottom: 1.5em;
+  font-size: .75em;
+  text-align: center;
+  border: 1px solid #fbe2e8;
+  border-radius: .15em;
+  /*box-shadow: 0 0.1em 0.15em;*/
+  padding: 10px 20px;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  /*background: linear-gradient(180deg, #015249 40%, #77C9D4 90%);*/
+  background: linear-gradient(180deg, #008F95 100%, #008F95 20%);
+  
+}
+
+h1, h2, h3 {
+    color: #FAFBFC;
+    font-size: 1.5em;
+    font-weight: 200;
+    letter-spacing: 0.02em;
+
+}
+
+.swiper-container {
+  width: 45%;
+  height: 50%;
+  background-color: #99D3DF;
+  -moz-box-shadow:    inset 0 0 15px #C4DBF6;
+  -webkit-box-shadow: inset 0 0 15px #C4DBF6;
+  box-shadow:         inset 0 0 15px #C4DBF6;
+  background: linear-gradient(180deg, #99D3DF 70%, #008F95 20%);
+}
+
+.startGame{
+  position: fixed;
+  /*z-index: 1;*/
+  padding-top: 100px;
+  left: 50%;
+  top: 35%;
+  width: 65%;
+  transform: translate(-50%, -50%);
+  overflow: auto;
+  margin: 2rem 0 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-hidden {
+  position: absolute;
+  left: -9999px;
+}
+
+img:hover{
+  cursor: pointer;
+
+}
+
+/* Stuff after this is only to make things more pretty */
+input[type=radio] + label>img {
+  border: 1px dashed #444;
+  width: 150px;
+  height: 150px;
+  transition: 500ms all;
+}
+
+input[type=radio]:checked + label>img {
+  transform: 
+    rotateZ(-10deg) 
+    rotateX(10deg);
+}
+
+input[type="radio"] {
+  cursor: pointer;
+   
+}
+
+.container {
+  position: fixed;
+  /*z-index: 1;*/
+  left: 50%;
+  top: 40%;
+  width: 35%;
+  transform: translate(-50%, -50%);
+  overflow: auto;
+  display: block;
+  text-decoration: none;
+  margin-bottom: 1.5em;
+  font-size: .75em;
+  text-align: center;
+  border: 1px solid #fbe2e8;
+  border-radius: .15em;
+  /*box-shadow: 0 0.1em 0.15em;*/
+  padding: 10px 20px;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  /*background: linear-gradient(180deg, #015249 40%, #77C9D4 90%);*/
+  background: linear-gradient(120deg, #328CC1 50%, #48c9f8 50%);
+}  
+
+.container span p{
+  font-size: 3em;
+  color: red;
+}
+
+.container[type=button]{
+  display: flex;
+} 
+
+.myBtn1 {
+  justify-content: center;
+  margin-top: 3%;
+} 
+
+.congrat__message {
+  font-family: 'Coda', cursive;
+  font-family: 'Hanuman', serif;
+  font-size: 14px;
+	text-align: center;
+}
+
+.try__again {
+  font-family: 'Coda', cursive;
+  font-family: 'Hanuman', serif;
+  font-size: 14px;
+  text-align: center;
+}
+
+.hidden{
+  display: none;
+}
+
+.restart__game{
+  justify-content: center;
+}
+
+.restart__game,
+.myBtn1,
+.myBtn3,
+.myBtn4 {
+  position: relative;
+  z-index: 10;
+  margin-bottom: 2rem;
+  padding: 0.375rem 0.75rem;
+  color: #FAFBFC;
+  background: linear-gradient(110deg, #E24E42 20%, #E24E42 80%);
+  font-size: 1rem;
+  border-radius: 0.25rem;
+}
+
+.restart__game:hover,
+.myBtn1:hover,
+.myBtn3:hover,
+.myBtn4:hover {
+  background-color: #328CC1;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+

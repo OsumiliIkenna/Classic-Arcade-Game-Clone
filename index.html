@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Effective JavaScript: Frogger</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
+    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Cinzel+Decorative|Hanuman|Nixie+One">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<main role="main" class="main">
+		<article class="startGame">			
+			<div class="swiper-container">
+				<header role="banner" class="heading">
+					<h1>UDACITY</h1>
+					<h2>FEND</h2>
+					<h3>P3 - CLASSIC ARCADE GAME CLONE</h3>				
+					<span>
+						<p>
+							Select your Player Choice and Click Start Button
+						</p>
+					</span>
+				</header>
+	            <div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<label>
+							<img class="players__images" src="images/char-boy.png" alt="char-boy" >
+							<input type="radio" class="players" name="playerImage" id="char-boy" value="char-boy" checked>
+						</label>
+					</div>
+					<div class="swiper-slide">
+						<label>
+							<img class="players__images" src="images/char-cat-girl.png" alt="Cat Grirl" >
+							<input type="radio" class="players" name="playerImage" id="char-cat-girl" value="char-cat-girl">
+						</label>
+					</div>
+					<div class="swiper-slide">
+						<label>
+							<img class="players__images" src="images/char-horn-girl.png" alt="Horn Girl">
+							<input type="radio" class="players" name="playerImage" id="char-horn-girl" value="char-horn-girl">
+						</label>
+					</div>
+					<div class="swiper-slide">
+						<label>
+							<img class="players__images" src="images/char-pink-girl.png" alt="Pink Girl">
+							<input type="radio" class="players" name="playerImage" id="char-pink-girl" value="char-pink-girl">
+						</label>
+					</div>
+					<div class="swiper-slide">
+						<label>
+							<img class="players__images" src="images/char-princess-girl.png" alt="Princess Girl">
+							<input type="radio" class="players" name="playerImage" id="char-princess-girl" value="char-princess-girl">
+						</label>
+					</div>				
+		    	</div>
+            	<!-- Add Pagination -->
+			    <div class="swiper-pagination"></div>
+			    <!-- Add Arrows -->
+			    <div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+				<div class="modalButton">
+                	<button class="myBtn1" type="submit">Start Game</button>
+            	</div>
+		    </div> 
+		</article>
+		<section class='canvas__deck hidden'>
+			<div class="canvas">
+
+			</div>	
+			<button class="restart__game" type="submit">Restart Game</button>
+		</section>
+		<section class="congrat__message hidden">
+			<div class="container">
+				<h1>UDACITY</h1>
+				<h2>FEND</h2>
+				<h3>P3 - CLASSIC ARCADE GAME CLONE</h3>				
+				<span>
+					<p class="message"><span>Hurray!!!</span></p>
+					<span>You scored <p class="score"></p></span>
+					<p><span>Congratulation</span></p>
+				</span>		
+				<button class="myBtn3" type="submit">New Game</button>
+			</div>
+		</section>
+		<section class="try__again hidden">
+			<div class="container">
+				<h1>UDACITY</h1>
+				<h2>FEND</h2>
+				<h3>P3 - CLASSIC ARCADE GAME CLONE</h3>				
+				<span>
+					<p class="message"><span>Game Over</span></p>
+				</span>		
+				<button class="myBtn4" type="submit">Try Again</button>
+			</div>
+		</section>
+	</main>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.16.0/polyfill.min.js"></script>
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=Map,Set,Element.prototype.matches,Node.prototype.contains"></script>
+    <script src="js/resources.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/engine.js"></script>
+    <script src="js/swiper.min.js"></script>
+	<!-- Initiaizel Swiper -->
+	<script>
+	    var swiper = new Swiper('.swiper-container', {
+	      slidesPerView: 5,
+	      spaceBetween: 10,
+	      freeMode: true,
+	      pagination: {
+	        el: '.swiper-pagination',
+	        clickable: true,
+	      },
+	    });
+  </script>
+</body>
+</html>
